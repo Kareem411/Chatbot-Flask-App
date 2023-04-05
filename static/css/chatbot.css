@@ -1,0 +1,16 @@
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 60%;
+}
+
+.user-message {
+  background-color: #F2F2F2;
+  float: left;
+}
+
+.chatbot-message {
+  background-color: #DCF8C6;
+  float: right;
+}

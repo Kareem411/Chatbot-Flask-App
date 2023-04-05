@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    input[type="text"] {
+      width: 60%;
+      border: none;
+      border-bottom: 2px solid #555;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chatbot Demo</h1>
+  <form action="/chatbot" method="post">
+    <input type="text" name="user_message" placeholder="Type your message here...">
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
