@@ -4,6 +4,54 @@
 	<meta charset="UTF-8">
 	<title>Chatbot Demo - Chatbot</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+	<style>
+		body {
+			background: linear-gradient(to bottom, #19A7CE, #146C94);
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #fff;
+		}
+		header {
+			background-color: #333;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 32px;
+		}
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.message {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 10px;
+			display: inline-block;
+			max-width: 60%;
+		}
+		.user-message {
+			background-color: #fff;
+			color: #333;
+			text-align: right;
+			margin-left: auto;
+		}
+		.chatbot-message {
+			background-color: #333;
+			color: #fff;
+			text-align: left;
+			margin-right: auto;
+		}
+		.user-message p, .chatbot-message p {
+			margin: 0;
+			font-size: 18px;
+			word-wrap: break-word;
+		}
+	</style>
 </head>
 <body>
 	<header>
